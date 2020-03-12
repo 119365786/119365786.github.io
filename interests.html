@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>IS1113 Project</title>
+		<meta charset="UTF=8">
+		<meta name="viewport" content="width=device-width"/>
+<style>
+	* {
+	box-sizing: border-box;
+}
+
+/* Style the body*/
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+	padding: 80px;
+	text-allign:center;
+	background: #7FFFD4;
+	color: black;
+}
+
+
+.header h1 {
+	font-size: 80px:;
+
+}
+
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	}
+	
+	
+/*Right-aligned link */
+.navbar a right
+	float: right;
+	}
+	
+/*Change color on hover*/
+.navbar a:hover {
+	background-color:#ddd;
+	color: black;
+}
+
+/*Active/current link*/
+.navbar a.active { 
+	background-color: #666;
+	color: white;
+}
+
+/*Column container */
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap /* IE10 */
+	flex-wrap: wrap;
+}
+
+/*Create two unequal columns that sits next to each other*/
+/* Sidebar/left column */
+.side {
+	-ms-flex: 30%; /* IE10 */
+	flex: 30%;
+	background-color: #£1£1£1;
+	padding: 40px;
+}
+
+/*Main Column */
+.main {
+	-ms-flex: 70%; /* IE10 */
+	flex: 70%;
+	background-color: white;
+	padding: 20px;
+}
+
+
+.fakeing {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+	
+
+/* Footer *?
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+}
+
+
+@media screen and (max-width: 400px) {
+	.row [
+	flex-direction: column;
+	}
+}
+
+
+@media scree and (max-width: 400px) {
+	.navbar a {
+	float:none;
+	width:100%
+	
+
+}
+	
+</style>
+</head>
+		
+		
+		
+<body>
+		
+	<!-- Title of the webpage -->
+		<div class="header">
+			<h1> Interests </h1>
+		</div>
+			
+<!-- Navigation Bar-->
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="interests.html" class = "active" >Interests</a>
+			<a href="calculator.html">Calculator</a>
+			<a href="consulting.html" class="right">Consulting</a>
+			<ul>
+			<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"> CV Options</a>
+			<div class="dropdown-content">
+			<a href="cv.html">Personal Details</a>
+			<a href="education.html">Education</a>
+			<a href="workexp.html">Work Experience</a>
+			</div>
+			</li>
+			</ul>
+		</div>
+
+	<h1> Sports </h1>
+		<p> From a young age I have always had an interest in sports. My favourite sport is swimming; although ironically I only learned how to swim after I nearly drowned on a family 
+		    holiday. After this incident, I was enrolled in swimming lessons, and ever since then I have progressed steadily and my love of the sport has grown. A few years later I 
+            joined my local swimming club. When I reached the competitive squad in the club, I began competing in swimming galas around the country. I enrolled in water safety classes 
+	        at the pool, and completed all the levels required to become a pool lifeguard. The summer after I completed my water safety levels, I joined the Cork Surf Lifesaving Club.
+	        During the summer this club trained twice a week on youghal beach, where we practiced skills like paddling on surfboards, and using rescue tubes and skiis. Swimming is 
+	        a passion of mine, and encouraged me to get involved in water safety. I am now a qualified lifeguard, and work part time in the pool where I learned how to swim.</p>
+	<h1> Travel </h1> 
+			<p> Travelling is something I place a lot of value on. I think it is very important to see various parts of the world, so we can broaden our horizons, and increase our
+                knowledge of different cultures. Unfortunately, I have not had the opportunuty to do a huge amount of travelling just yet. However I have visited Wales, England, and Portugal.
+                When I finish college I plan to travel for a while before I find employment.	</p>
+	 
+
+<!-- JQUERY PICTURE BOX -->
+			<div id="jquery-script-menu">
+			<div class="jquery-script-center">
+		<script type ="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script></div>
+			<div class="jquery-script-clear"></div>
+			</div>
+			</div>
+			<div id="container"> <span class="title">My Interests</span>
+				<ul id="imgs">
+				<li><img src="swim.jpg" alt="swim" /></li>
+				<li><img src="surfing.jpg" alt="surfing" /></li>
+				<li><img src="comp.jpg" alt="swimming competition" /></li>
+				<li><img src="iws.jpg" alt="irish water safety" /></li>
+				<li><img src="portugal.jpg" alt="portugal" /></li>
+				<li><img src="england.jpg" alt="england" /></li>
+				<li><img src="wales.jpg" alt="wales" /></li>
+				</ul>
+			<span class="title"></span> </div>
+			<div id="controler"> </div>
+					<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+					<script type="text/javascript" src="ImageScroll.js"></script> 
+					<script type="text/javascript">
+
+					$('#imgs').imageScroll({
+					orientation:"left",
+					speed:950,
+					interval:1000,
+					hoverPause:true,
+					callback:function(){
+					var ordinal = $(this).find("img").first().attr("src");
+     
+			<!-- console.log(ordinal); -->
+			$(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+					}
+			});
+
+ </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+				
+				
+<!-- Drop Down -->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #D41328;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+<!-- JQuery CSS -->
+<style type="text/css">
+#container {
+  overflow: hidden;
+  width: 800px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:150px;
+}
+
+#imgs {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+
+#imgs img {
+  width: 205px;
+  height: 120px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: gray;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+</style>
+
+</body>
+</html>	
